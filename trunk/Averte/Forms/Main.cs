@@ -301,7 +301,7 @@ namespace Averte
 
             // TODO: Disable all tiles.
 
-            MapleConnection.Instance.Send(LoginPacket.SelectCharacter(Constants.Pic, (int)selectedCharacterTile.Tag));
+            new Pic((int)selectedCharacterTile.Tag).Show();
         }
 
         #endregion

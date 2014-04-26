@@ -10,8 +10,6 @@ namespace Averte
         public const byte Localisation = 8;
         public const ushort MapleVersion = 148;
         public const short PatchLocation = 3;
-
-        public const string Pic = "YourPicHere";
     }
 
     public enum Indexer : int

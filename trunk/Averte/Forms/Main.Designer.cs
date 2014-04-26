@@ -34,6 +34,9 @@
             this.ConnectionTab = new MetroFramework.Controls.MetroTabPage();
             this.ConnectionLabel = new MetroFramework.Controls.MetroLabel();
             this.ConnectionSpinner = new MetroFramework.Controls.MetroProgressSpinner();
+            this.FieldTab = new MetroFramework.Controls.MetroTabPage();
+            this.UIPanel = new MetroFramework.Controls.MetroPanel();
+            this.FieldPictureBox = new System.Windows.Forms.PictureBox();
             this.LoginTab = new MetroFramework.Controls.MetroTabPage();
             this.AverteLogoLogin = new System.Windows.Forms.Label();
             this.LoginLogo = new MetroFramework.Controls.MetroLabel();
@@ -46,17 +49,14 @@
             this.CharacterSelectTab = new MetroFramework.Controls.MetroTabPage();
             this.label2 = new System.Windows.Forms.Label();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.FieldTab = new MetroFramework.Controls.MetroTabPage();
-            this.UIPanel = new MetroFramework.Controls.MetroPanel();
-            this.FieldPictureBox = new System.Windows.Forms.PictureBox();
             this.MainHidden.SuspendLayout();
             this.ConnectionTab.SuspendLayout();
-            this.LoginTab.SuspendLayout();
-            this.WorldSelectTab.SuspendLayout();
-            this.CharacterSelectTab.SuspendLayout();
             this.FieldTab.SuspendLayout();
             this.UIPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FieldPictureBox)).BeginInit();
+            this.LoginTab.SuspendLayout();
+            this.WorldSelectTab.SuspendLayout();
+            this.CharacterSelectTab.SuspendLayout();
             this.SuspendLayout();
             // 
             // PacketQueueTimer
@@ -68,14 +68,14 @@
             // MainHidden
             // 
             this.MainHidden.Controls.Add(this.ConnectionTab);
-            this.MainHidden.Controls.Add(this.FieldTab);
             this.MainHidden.Controls.Add(this.LoginTab);
             this.MainHidden.Controls.Add(this.WorldSelectTab);
             this.MainHidden.Controls.Add(this.CharacterSelectTab);
-            this.MainHidden.DesignerIndex = 4;
+            this.MainHidden.Controls.Add(this.FieldTab);
+            this.MainHidden.DesignerIndex = 0;
             this.MainHidden.Location = new System.Drawing.Point(26, 86);
             this.MainHidden.Name = "MainHidden";
-            this.MainHidden.SelectedIndex = 4;
+            this.MainHidden.SelectedIndex = 0;
             this.MainHidden.Size = new System.Drawing.Size(748, 483);
             this.MainHidden.TabIndex = 0;
             // 
@@ -109,6 +109,45 @@
             this.ConnectionSpinner.Size = new System.Drawing.Size(128, 128);
             this.ConnectionSpinner.TabIndex = 2;
             this.ConnectionSpinner.Value = 30;
+            // 
+            // FieldTab
+            // 
+            this.FieldTab.AutoScroll = true;
+            this.FieldTab.Controls.Add(this.UIPanel);
+            this.FieldTab.HorizontalScrollbar = true;
+            this.FieldTab.HorizontalScrollbarBarColor = true;
+            this.FieldTab.Location = new System.Drawing.Point(4, 35);
+            this.FieldTab.Name = "FieldTab";
+            this.FieldTab.Size = new System.Drawing.Size(740, 444);
+            this.FieldTab.TabIndex = 4;
+            this.FieldTab.Text = "Field";
+            this.FieldTab.VerticalScrollbar = true;
+            this.FieldTab.VerticalScrollbarBarColor = true;
+            // 
+            // UIPanel
+            // 
+            this.UIPanel.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
+            this.UIPanel.Controls.Add(this.FieldPictureBox);
+            this.UIPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UIPanel.HorizontalScrollbarBarColor = true;
+            this.UIPanel.HorizontalScrollbarHighlightOnWheel = false;
+            this.UIPanel.HorizontalScrollbarSize = 10;
+            this.UIPanel.Location = new System.Drawing.Point(0, 0);
+            this.UIPanel.Name = "UIPanel";
+            this.UIPanel.Size = new System.Drawing.Size(740, 444);
+            this.UIPanel.TabIndex = 2;
+            this.UIPanel.VerticalScrollbarBarColor = true;
+            this.UIPanel.VerticalScrollbarHighlightOnWheel = false;
+            this.UIPanel.VerticalScrollbarSize = 10;
+            // 
+            // FieldPictureBox
+            // 
+            this.FieldPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FieldPictureBox.Location = new System.Drawing.Point(0, 0);
+            this.FieldPictureBox.Name = "FieldPictureBox";
+            this.FieldPictureBox.Size = new System.Drawing.Size(740, 444);
+            this.FieldPictureBox.TabIndex = 3;
+            this.FieldPictureBox.TabStop = false;
             // 
             // LoginTab
             // 
@@ -237,45 +276,6 @@
             this.metroLabel2.TabIndex = 12;
             this.metroLabel2.Text = "Character Select";
             // 
-            // FieldTab
-            // 
-            this.FieldTab.AutoScroll = true;
-            this.FieldTab.Controls.Add(this.UIPanel);
-            this.FieldTab.HorizontalScrollbar = true;
-            this.FieldTab.HorizontalScrollbarBarColor = true;
-            this.FieldTab.Location = new System.Drawing.Point(4, 35);
-            this.FieldTab.Name = "FieldTab";
-            this.FieldTab.Size = new System.Drawing.Size(740, 444);
-            this.FieldTab.TabIndex = 4;
-            this.FieldTab.Text = "Field";
-            this.FieldTab.VerticalScrollbar = true;
-            this.FieldTab.VerticalScrollbarBarColor = true;
-            // 
-            // UIPanel
-            // 
-            this.UIPanel.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
-            this.UIPanel.Controls.Add(this.FieldPictureBox);
-            this.UIPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UIPanel.HorizontalScrollbarBarColor = true;
-            this.UIPanel.HorizontalScrollbarHighlightOnWheel = false;
-            this.UIPanel.HorizontalScrollbarSize = 10;
-            this.UIPanel.Location = new System.Drawing.Point(0, 0);
-            this.UIPanel.Name = "UIPanel";
-            this.UIPanel.Size = new System.Drawing.Size(740, 444);
-            this.UIPanel.TabIndex = 2;
-            this.UIPanel.VerticalScrollbarBarColor = true;
-            this.UIPanel.VerticalScrollbarHighlightOnWheel = false;
-            this.UIPanel.VerticalScrollbarSize = 10;
-            // 
-            // FieldPictureBox
-            // 
-            this.FieldPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FieldPictureBox.Location = new System.Drawing.Point(0, 0);
-            this.FieldPictureBox.Name = "FieldPictureBox";
-            this.FieldPictureBox.Size = new System.Drawing.Size(740, 444);
-            this.FieldPictureBox.TabIndex = 3;
-            this.FieldPictureBox.TabStop = false;
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
@@ -294,15 +294,15 @@
             this.MainHidden.ResumeLayout(false);
             this.ConnectionTab.ResumeLayout(false);
             this.ConnectionTab.PerformLayout();
+            this.FieldTab.ResumeLayout(false);
+            this.UIPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.FieldPictureBox)).EndInit();
             this.LoginTab.ResumeLayout(false);
             this.LoginTab.PerformLayout();
             this.WorldSelectTab.ResumeLayout(false);
             this.WorldSelectTab.PerformLayout();
             this.CharacterSelectTab.ResumeLayout(false);
             this.CharacterSelectTab.PerformLayout();
-            this.FieldTab.ResumeLayout(false);
-            this.UIPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.FieldPictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }

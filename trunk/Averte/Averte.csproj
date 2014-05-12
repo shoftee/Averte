@@ -33,13 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Maple">
-      <HintPath>..\..\..\..\GitHub\Maple\trunk\Maple\bin\Debug\Maple.dll</HintPath>
+      <HintPath>..\lib\Maple.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework">
-      <HintPath>..\..\..\..\MetroFramework.dll</HintPath>
+      <HintPath>..\lib\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="MetroFramework.Design">
-      <HintPath>..\..\..\..\MetroFramework.Design.dll</HintPath>
+      <HintPath>..\lib\MetroFramework.Design.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
